@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8">
+<style>html,body{margin:0;width:1080px;height:1920px;overflow:hidden}#a{position:absolute;inset:0}
+#t{position:absolute;left:100px;right:100px;top:760px;text-align:center;font:800 118px system-ui,sans-serif;color:#fff}
+#b{position:absolute;left:100px;top:1180px;height:26px;border-radius:13px;background:#fff}</style>
+<div id="a"></div><div id="t"></div><div id="b"></div>
+<script src="scenes.js"></script>
+<script>
+window.EDU = { seek(t) {
+  const s = SCENES.find(x => t >= x.from && t < x.to) || SCENES[SCENES.length - 1];
+  document.getElementById('a').style.background = s.color;
+  document.getElementById('t').textContent = s.title;
+  document.getElementById('b').style.width = (t / DUR * 880) + 'px';
+} };
+</script>

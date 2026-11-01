@@ -1,0 +1,33 @@
+/* The educational kit: the constant layer only (frame, layouts, captions, type, small parts).
+   Colours and worlds belong to each reel's own composition, never to the kit. */
+@font-face { font-family: 'Inter'; src: url('fonts/Inter-latin.woff2') format('woff2'); font-weight: 100 900; font-display: block; }
+@font-face { font-family: 'JetBrains Mono'; src: url('fonts/JetBrainsMono-latin.woff2') format('woff2'); font-weight: 100 800; font-display: block; }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+body { font-family: 'Inter', 'Segoe UI', 'Segoe UI Symbol', sans-serif; -webkit-font-smoothing: antialiased; }
+
+#frame { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+#face { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; transform-origin: 540px 792px; }
+#stage { position: absolute; left: 0; top: 0; width: 1080px; overflow: hidden; }
+#over { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; pointer-events: none; }
+#fx { position: absolute; left: 0; top: 0; width: 1080px; pointer-events: none; overflow: hidden; }
+
+/* captions: one style everywhere (constant 2) */
+#cap { position: absolute; left: 50%; transform: translate(-50%, -50%); padding: 14px 26px 16px; border-radius: 14px;
+       background: rgba(12, 10, 16, 0.78); color: #fff; font-weight: 800; font-size: 62px; letter-spacing: -0.02em;
+       line-height: 1.1; white-space: nowrap; text-shadow: 0 2px 6px rgba(0,0,0,.35); display: none; }
+
+/* type */
+.mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+.kicker { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 30px; letter-spacing: 0.08em; text-transform: uppercase; }
+.h1 { font-weight: 900; letter-spacing: -0.035em; line-height: 0.98; }
+.h2 { font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
+.abs { position: absolute; }
+
+/* small parts */
+.card { position: absolute; border-radius: 26px; overflow: hidden; }
+.chip { position: absolute; display: inline-flex; align-items: center; gap: 12px; border-radius: 999px; padding: 12px 24px;
+        font-weight: 800; font-size: 34px; white-space: nowrap; }
+.caret { display: inline-block; width: 0.55em; height: 1.05em; vertical-align: -0.15em; margin-left: 2px; }
+.px { image-rendering: pixelated; shape-rendering: crispEdges; }

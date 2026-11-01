@@ -1,0 +1,327 @@
+{
+ "about": "The sound design pools. Each role names real recorded effects from the Mixkit library (free licence, commercial use, no credit needed), stored in the library built by tools/sfxlib.py.",
+ "lib": "sfx-library",
+ "roles": {
+  "whoosh_s": {
+   "ids": [
+    3115,
+    1464,
+    1461,
+    2637,
+    1490,
+    2627,
+    174,
+    1472,
+    166
+   ],
+   "align": "peak",
+   "gain": -13,
+   "hp": 140,
+   "pre": 0.45,
+   "maxdur": 0.7
+  },
+  "whoosh_m": {
+   "ids": [
+    168,
+    1471,
+    2632,
+    1468,
+    2607,
+    1492,
+    2625
+   ],
+   "align": "peak",
+   "gain": -12,
+   "hp": 110,
+   "pre": 0.7,
+   "maxdur": 1.0
+  },
+  "zoom": {
+   "ids": [
+    2617,
+    2618,
+    913,
+    2608,
+    772
+   ],
+   "align": "peak",
+   "gain": -13,
+   "hp": 140,
+   "pre": 0.4,
+   "maxdur": 0.6
+  },
+  "swipe": {
+   "ids": [
+    1530,
+    1130,
+    3120,
+    2380,
+    1529,
+    2384
+   ],
+   "align": "peak",
+   "gain": -14,
+   "hp": 160,
+   "pre": 0.12,
+   "maxdur": 0.4
+  },
+  "pop": {
+   "ids": [
+    2365,
+    3005,
+    2356,
+    2357,
+    2568,
+    1127
+   ],
+   "align": "peak",
+   "gain": -11,
+   "hp": 150,
+   "pre": 0.02,
+   "maxdur": 0.3
+  },
+  "click": {
+   "ids": [
+    1120,
+    1117,
+    2577,
+    1112,
+    1126,
+    2582,
+    1111,
+    1109
+   ],
+   "align": "peak",
+   "gain": -13,
+   "hp": 200,
+   "pre": 0.02,
+   "maxdur": 0.25
+  },
+  "key": {
+   "derived": "key",
+   "align": "on",
+   "gain": -19,
+   "hp": 250,
+   "pre": 0.004,
+   "maxdur": 0.09
+  },
+  "tick": {
+   "derived": "tick",
+   "align": "on",
+   "gain": -19,
+   "hp": 300,
+   "pre": 0.004,
+   "maxdur": 0.06
+  },
+  "glitch": {
+   "ids": [
+    2595,
+    1031,
+    1457,
+    2597,
+    2951,
+    2946,
+    2594
+   ],
+   "align": "peak",
+   "gain": -14,
+   "hp": 180,
+   "pre": 0.03,
+   "maxdur": 0.32
+  },
+  "thump": {
+   "ids": [
+    2103,
+    2143,
+    2153,
+    3049,
+    2148,
+    2151
+   ],
+   "align": "peak",
+   "gain": -8,
+   "hp": 0,
+   "pre": 0.015,
+   "maxdur": 0.4
+  },
+  "impact": {
+   "ids": [
+    2903,
+    2908,
+    778,
+    774
+   ],
+   "align": "peak",
+   "gain": -7,
+   "hp": 0,
+   "pre": 0.1,
+   "maxdur": 0.75
+  },
+  "sub": {
+   "derived": "sub",
+   "align": "on",
+   "gain": -6,
+   "hp": 0,
+   "pre": 0.0,
+   "maxdur": 1.3
+  },
+  "riser": {
+   "derived": "riser",
+   "align": "end",
+   "gain": -12,
+   "hp": 120,
+   "pre": 0,
+   "maxdur": 0
+  },
+  "error": {
+   "ids": [
+    2964,
+    955,
+    2947,
+    1110,
+    3159
+   ],
+   "align": "peak",
+   "gain": -12,
+   "hp": 150,
+   "pre": 0.02,
+   "maxdur": 0.4
+  },
+  "success": {
+   "ids": [
+    2520,
+    953,
+    2867,
+    3218,
+    2870
+   ],
+   "align": "peak",
+   "gain": -12,
+   "hp": 200,
+   "pre": 0.03,
+   "maxdur": 0.6
+  },
+  "notif": {
+   "ids": [
+    2519,
+    2356,
+    3123,
+    911
+   ],
+   "align": "peak",
+   "gain": -12,
+   "hp": 200,
+   "pre": 0.03,
+   "maxdur": 0.4
+  },
+  "camera": {
+   "ids": [
+    1133,
+    1434,
+    1432
+   ],
+   "align": "peak",
+   "gain": -13,
+   "hp": 200,
+   "pre": 0.02,
+   "maxdur": 0.3
+  },
+  "marker": {
+   "ids": [
+    2998,
+    2369,
+    2367,
+    2376,
+    3011
+   ],
+   "align": "peak",
+   "gain": -15,
+   "hp": 250,
+   "pre": 0.03,
+   "maxdur": 0.25
+  },
+  "crumple": {
+   "ids": [
+    2996,
+    2389,
+    2381
+   ],
+   "align": "peak",
+   "gain": -11,
+   "hp": 150,
+   "pre": 0.08,
+   "maxdur": 0.5
+  },
+  "trash": {
+   "ids": [
+    2613
+   ],
+   "align": "peak",
+   "gain": -11,
+   "hp": 60,
+   "pre": 0.15,
+   "maxdur": 0.6
+  },
+  "paper": {
+   "ids": [
+    1105,
+    2383,
+    2380,
+    2386
+   ],
+   "align": "peak",
+   "gain": -14,
+   "hp": 180,
+   "pre": 0.05,
+   "maxdur": 0.35
+  },
+  "coin": {
+   "ids": [
+    3217
+   ],
+   "align": "peak",
+   "gain": -13,
+   "hp": 250,
+   "pre": 0.02,
+   "maxdur": 0.4
+  },
+  "ring": {
+   "ids": [
+    2866
+   ],
+   "align": "on",
+   "gain": -12,
+   "hp": 300,
+   "pre": 0.02,
+   "maxdur": 0.6
+  },
+  "bell": {
+   "derived": "bell",
+   "align": "peak",
+   "gain": -10,
+   "hp": 200,
+   "pre": 0.02,
+   "maxdur": 0.9
+  },
+  "lock": {
+   "ids": [
+    187
+   ],
+   "align": "peak",
+   "gain": -8,
+   "hp": 150,
+   "pre": 0.12,
+   "maxdur": 0.5
+  },
+  "step": {
+   "ids": [
+    2182
+   ],
+   "align": "peak",
+   "gain": -8,
+   "hp": 150,
+   "pre": 0.01,
+   "maxdur": 0.25
+  }
+ }
+}

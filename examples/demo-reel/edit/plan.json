@@ -1,0 +1,43 @@
+{
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "to": 3,
+   "layout": "face"
+  },
+  {
+   "id": "body",
+   "from": 3,
+   "to": 6,
+   "layout": "gfx"
+  },
+  {
+   "id": "end",
+   "from": 6,
+   "to": 9,
+   "layout": "split"
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.1,
+   "role": "pop",
+   "g": -10,
+   "why": "the title lands"
+  },
+  {
+   "t": 3,
+   "role": "whoosh",
+   "g": -12,
+   "why": "the scene changes"
+  },
+  {
+   "t": 6,
+   "role": "whoosh",
+   "g": -12,
+   "why": "the scene changes"
+  }
+ ],
+ "dur": 9
+}

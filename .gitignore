@@ -1,0 +1,10 @@
+node_modules/
+__pycache__/
+*.pyc
+sfx-library/
+models/
+review/
+*.mp4
+*.wav
+!kit/sfx/*.wav
+.env

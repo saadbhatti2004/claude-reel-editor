@@ -1,0 +1,18 @@
+{
+ "reel": {
+  "title": "Demo reel",
+  "id": "demo-reel",
+  "handle": "your_handle"
+ },
+ "scenes": {
+  "hook": {
+   "what": "A plain title on a dark blue field."
+  },
+  "body": {
+   "what": "A plain title on a brown field. Try a note on this one."
+  },
+  "end": {
+   "what": "A plain title on an indigo field."
+  }
+ }
+}
