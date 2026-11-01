@@ -94,7 +94,10 @@ class Reel:
         for name in ('CAPWORDS', 'WORDS'):
             m = re.search(r'window\.' + name + r'\s*=\s*', src)
             if m:
-                return json.JSONDecoder().raw_decode(src[m.end():])[0]
+                try:
+                    return json.JSONDecoder().raw_decode(src[m.end():])[0]
+                except ValueError:  # an alias such as CAPWORDS = WORDS: use the next name
+                    continue
         return []
 
     def load(self):
