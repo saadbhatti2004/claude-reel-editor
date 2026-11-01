@@ -30,22 +30,66 @@ A local dashboard for one reel. It runs on your own machine and nothing leaves i
 Keys: `Space` play, `Left` `Right` one frame, `Up` `Down` one beat, `N` note, `Shift N` note on the whole video, `L` loop the
 beat, `I` Instagram view, `M` mute, `S` speed.
 
-## Set up
-You need [Claude Code](https://claude.com/claude-code), Node 18 or newer, Python 3.10 or newer, and
-[ffmpeg](https://ffmpeg.org) on your PATH.
+## Set up from scratch
+You need about 3 GB of free disk space. Tested on Windows 11 with Node 22 and Python 3.13.
+
+**1. Install the tools.** Skip any you already have, then close the terminal and open a new one so they are on your PATH.
+
+Windows (PowerShell):
+
+```powershell
+winget install Git.Git
+winget install OpenJS.NodeJS.LTS
+winget install Python.Python.3.13
+winget install Gyan.FFmpeg
+```
+
+Mac:
 
 ```bash
+brew install git node python@3.13 ffmpeg
+```
+
+**2. Install Claude Code and log in.**
+
+```bash
+npm install -g @anthropic-ai/claude-code
+claude
+```
+
+**3. Get this repo.** Copy the URL from the green Code button at the top of this page.
+
+```bash
+git clone <the URL you copied>
+cd claude-reel-editor
 npm install
+python -m venv .venv
+```
+
+Turn the Python environment on. Do this every time you open a new terminal:
+
+```bash
+# Windows PowerShell
+Set-ExecutionPolicy -Scope Process Bypass
+.venv\Scripts\Activate.ps1
+
+# Mac
+source .venv/bin/activate
+```
+
+Then install the Python parts:
+
+```bash
 pip install -r requirements.txt
 ```
 
-Try the dashboard on the demo. The first run renders a short draft:
+**4. Check it works.** The first run renders a short draft and opens the dashboard in your browser:
 
 ```bash
 python tools/beatreview.py examples/demo-reel
 ```
 
-To edit a real reel, build the sound effects library once (free, from Mixkit, a few hundred MB):
+**5. Build the sound effects library, once.** Free, from Mixkit, a few hundred MB:
 
 ```bash
 python tools/sfxlib.py fetch sfx-library
@@ -54,8 +98,19 @@ python tools/sfxlib.py measure sfx-library
 python tools/sfxlib.py derive sfx-library
 ```
 
-For the face card layout, put the [Robust Video Matting](https://github.com/PeterL1n/RobustVideoMatting) ONNX model
-(`rvm_mobilenetv3_fp32.onnx`) in `models/`.
+**6. Get the face cutout model, once.** It powers the face card layout:
+
+```bash
+mkdir models
+curl -L -o models/rvm_mobilenetv3_fp32.onnx https://github.com/PeterL1n/RobustVideoMatting/releases/download/v1.0.0/rvm_mobilenetv3_fp32.onnx
+```
+
+The first transcription also downloads the speech model by itself.
+
+Only if you want to decode other creators' reels (`study/README.md`): `pip install -r requirements-study.txt`. It pulls in PyTorch,
+which is a large download, so skip it until you need it.
+
+Or skip the typing: after step 2, clone the repo, open Claude Code inside it and say "set this up for me".
 
 ## Use it
 Open Claude Code in this folder and say:

@@ -19,3 +19,8 @@ When the user says "apply my notes" or similar:
 
 The dashboard picks up each new round by itself. When the user corrects an edit, ask whether to write that correction into
 `ENGINE.md` so it holds for every later reel.
+
+## First-time setup
+When the user asks you to set this repo up, follow "Set up from scratch" in `README.md` from step 3 for them: run each command,
+fix what fails, and finish by opening the demo in Beat Review. Create `.venv` and use it for every Python command. If a tool from
+step 1 is missing, install it with their package manager after telling them what you are installing.

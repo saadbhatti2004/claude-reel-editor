@@ -1,6 +1,7 @@
 faster-whisper
+# faster-whisper 1.2 breaks on av 18 and newer
+av<18
 numpy
 opencv-python
 onnxruntime
 pillow
-demucs
