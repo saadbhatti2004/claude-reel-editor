@@ -66,7 +66,7 @@ npm install
 python -m venv .venv
 ```
 
-Turn the Python environment on. Do this every time you open a new terminal:
+On a Mac, type `python3` instead of `python` in that last line. Now turn the Python environment on. Do this every time you open a new terminal:
 
 ```bash
 # Windows PowerShell
@@ -102,10 +102,10 @@ python tools/sfxlib.py derive sfx-library
 
 ```bash
 mkdir models
-curl -L -o models/rvm_mobilenetv3_fp32.onnx https://github.com/PeterL1n/RobustVideoMatting/releases/download/v1.0.0/rvm_mobilenetv3_fp32.onnx
+curl.exe -L -o models/rvm_mobilenetv3_fp32.onnx https://github.com/PeterL1n/RobustVideoMatting/releases/download/v1.0.0/rvm_mobilenetv3_fp32.onnx
 ```
 
-The first transcription also downloads the speech model by itself.
+On a Mac, type `curl` instead of `curl.exe`. The first transcription also downloads the speech model by itself.
 
 Only if you want to decode other creators' reels (`study/README.md`): `pip install -r requirements-study.txt`. It pulls in PyTorch,
 which is a large download, so skip it until you need it.
